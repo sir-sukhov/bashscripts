@@ -1,0 +1,1 @@
+script to split directory with billions of small files to multiple archives
