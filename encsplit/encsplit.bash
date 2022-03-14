@@ -24,8 +24,7 @@
 #
 #
 inpath=$1
-PSSWRD="test"
-bytes_in_part="19m"
+bytes_in_part="10m"
 
 set -e
 
@@ -73,7 +72,7 @@ then
         encrypt_file
         split_file
         log "Removing encrypted file"
-        # rm -rf $inpath.enc
+        rm -rf $inpath.enc
 elif [ ! -z $inpath ] && [ -d $inpath ]
 then
         log "Directory is provided as input path"
